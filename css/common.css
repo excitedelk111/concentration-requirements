@@ -1,0 +1,25 @@
+/*–––––––––––––––––––––––––BASIC STYLING–––––––––––––––––––––––––*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fafafa;
+    overflow-x: hidden;
+}
+body, html {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    transform: translate3d(0, 0, 0);
+}
+/*–––––––––––––––––––––––––SETTING UP THE GRID–––––––––––––––––––––––––*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "header"
+            "content"
+            "footer";
+}

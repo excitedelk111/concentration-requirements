@@ -1,0 +1,112 @@
+/*–––––––––––––––––––––––––GRID COMPONENT 2 - CONTENT–––––––––––––––––––––––––*/
+.content {
+    /* grid properties */
+    grid-area: content;
+    /* display properties */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* spacing */
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+/*–––––––––––––––––––––––––FONT STYLES–––––––––––––––––––––––––*/
+.title {
+    /* styles */
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-size: 48px;
+    color: black;
+    /* spacing */
+    margin-top: 1%;
+}
+.sub-title {
+    /* styles */
+    font-family: 'Crimson Text';
+    font-weight: 700;
+    font-size: 40px;
+    color: #C00404;
+    /* spacing */
+    margin-top: 1%;
+}
+.serif-content-text {
+    /* styles */
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    /* spacing */
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.drop-down-menu-box {
+    /* styles */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #C00404;
+    border: #C00404 solid;
+    max-width: 20%;
+    min-height: 50px;
+    /* spacing */
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+/*–––––––––––––––––––––––––MEDIA SCREEN ADAPTATION–––––––––––––––––––––––––*/
+/*Adjustments to Ensure Content Does Not Overlap*/
+@media screen and (max-width: 1024px) {
+    /* changing logo size */
+    .logo {
+        max-width: 30%;
+    }
+    /* hiding nav links */
+    .nav-links li {
+        opacity: 0;
+    }
+    /* dispalying hamburger menu icon */
+    .burger {
+        display: block;
+    }
+}
+/*Tablet Screen Adjustments*/
+@media screen and (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+    }
+    /* changing logo size */
+    .logo {
+        max-width: 40%;
+    }
+    /* hiding nav links */
+    .nav-links li {
+        opacity: 0;
+    }
+    /* dispalying hamburger menu icon */
+    .burger {
+        display: block;
+    }
+}
+/*Mobile Screen Adjustments*/
+@media screen and (max-width: 420px) {
+    body, html {
+        overflow-x: hidden;
+    }
+    /* changing logo size */
+    .logo {
+        max-width: 100%;
+    }
+    /* hiding nav links */
+    .nav-links li {
+        opacity: 0;
+    }
+    /* dispalying hamburger menu icon */
+    .burger {
+        display: block;
+    }
+}
