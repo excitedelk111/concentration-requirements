@@ -1,0 +1,194 @@
+/* source: */
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables */
+
+/*–––––––––––––––––––––––––MAIN TABLE FORMATTING–––––––––––––––––––––––––*/
+.main-table table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #D9D9D9;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    color: #434343
+}
+
+.main-table thead th:nth-child(1) {
+    text-align: center;
+    width: 10%;
+}
+
+.main-table thead th:nth-child(2) {
+    width: 60%;
+}
+
+.main-table thead th:nth-child(3) {
+    width: 30%;
+}
+
+.main-table th, td {
+    padding: 30px;
+}
+
+.main-table thead th {
+    text-align: left;
+}
+
+.main-table tbody td {
+    text-align: left;
+}
+
+.main-table tfoot th {
+    text-align: right;
+}
+
+.main-table thead {
+    background-color: #C00404;
+    color: white;
+}
+
+.main-table tbody tr:nth-child(odd) {
+    background-color: #F9F5EA;
+}
+
+.description {
+    font-weight: 400;
+}
+
+.pathway-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.drop-down-menu-box-table {
+    /* styles */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: #434343;
+    border: #434343 solid;
+    background-color: white;
+    min-width: 30%;
+    max-width: 50%;
+    min-height: 40px;
+    /* spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+.main-table {
+    display: block;
+    margin-bottom: 3%;
+}
+
+.condensed-table {
+    display: none;
+    margin-bottom: 5%;
+}
+
+/*–––––––––––––––––––––––––MEDIA SCREEN ADAPTATION–––––––––––––––––––––––––*/
+/*Mobile Screen Adjustments*/
+@media screen and (max-width: 420px) {
+    .drop-down-menu-box {
+        max-width: 55%;
+        padding: 3%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    .new-page-link {
+        padding-bottom: 2%;
+        margin-top: 1.5%;
+        max-width: 65%;
+    }
+
+    .main-table {
+        display: none;
+    }
+
+    .condensed-table {
+        display: block;
+        margin-top: 2%;
+    }
+
+    .condensed-table table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #D9D9D9;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        color: #434343
+    }
+    
+    .condensed-table thead th:nth-child(1) {
+        text-align: center;
+        width: 10%;
+    }
+    
+    .condensed-table thead th:nth-child(2) {
+        width: 60%;
+    }
+    
+    .condensed-table thead th:nth-child(3) {
+        width: 30%;
+    }
+    
+    .condensed-table th, td {
+        padding: 30px;
+    }
+    
+    .condensed-table thead th {
+        text-align: left;
+    }
+    
+    .condensed-table tbody td {
+        text-align: left;
+    }
+    
+    .condensed-table tfoot th {
+        text-align: right;
+    }
+    
+    .condensed-table thead {
+        background-color: #C00404;
+        color: white;
+    }
+    
+    .condensed-table tbody tr:nth-child(odd) {
+        background-color: #F9F5EA;
+    }
+
+    .drop-down-menu-box-table {
+        /* styles */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        color: #434343;
+        border: #434343 solid;
+        background-color: white;
+        min-width: 30%;
+        max-width: 50%;
+        min-height: 40px;
+        /* spacing */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+        margin-top: 2%;
+        margin-bottom: 1%;
+        cursor: pointer;
+    }
+}

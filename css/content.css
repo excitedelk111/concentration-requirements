@@ -12,6 +12,7 @@
     padding-left: 2%;
     padding-right: 2%;
 }
+
 /*–––––––––––––––––––––––––FONT STYLES–––––––––––––––––––––––––*/
 .title {
     /* styles */
@@ -22,6 +23,7 @@
     /* spacing */
     margin-top: 1%;
 }
+
 .sub-title {
     /* styles */
     font-family: 'Crimson Text';
@@ -31,6 +33,7 @@
     /* spacing */
     margin-top: 1%;
 }
+
 .serif-content-text {
     /* styles */
     font-family: 'Crimson Text';
@@ -41,6 +44,7 @@
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
 .drop-down-menu-box {
     /* styles */
     font-family: 'Inter';
@@ -53,60 +57,83 @@
     min-height: 50px;
     /* spacing */
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 1%;
     margin-top: 2%;
     margin-bottom: 1%;
+    cursor: pointer;
 }
+
+.drop-down-text {
+    font-size: 15px;
+    color: #C00404;
+}
+
+span svg {
+    fill: #fccc58;
+    height: 1em;
+    vertical-align: -0.1875em;
+}
+
+.new-page-link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: black;
+    border-bottom: #d1d1d1 solid;
+    /* spacing */
+    padding-bottom: 1%;
+    margin-top: 1.5%;
+    max-width: 20%;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
 /*–––––––––––––––––––––––––MEDIA SCREEN ADAPTATION–––––––––––––––––––––––––*/
-/*Adjustments to Ensure Content Does Not Overlap*/
+/*Tablet Screen Adjustments*/
 @media screen and (max-width: 1024px) {
-    /* changing logo size */
-    .logo {
+    .title {
+        font-size: 36px;
+    }
+
+    .sub-title {
+        font-size: 32px;
+    }
+
+    .serif-content-text {
+        font-size: 16px;
+    }
+
+    .drop-down-menu-box {
+        min-height: 40px;
+        font-size: 11px;
         max-width: 30%;
     }
-    /* hiding nav links */
-    .nav-links li {
-        opacity: 0;
+
+    .drop-down-text {
+        font-size: 11px;
     }
-    /* dispalying hamburger menu icon */
-    .burger {
-        display: block;
-    }
-}
-/*Tablet Screen Adjustments*/
-@media screen and (max-width: 768px) {
-    body, html {
-        overflow-x: hidden;
-    }
-    /* changing logo size */
-    .logo {
-        max-width: 40%;
-    }
-    /* hiding nav links */
-    .nav-links li {
-        opacity: 0;
-    }
-    /* dispalying hamburger menu icon */
-    .burger {
-        display: block;
+
+    .new-page-link {
+        font-size: 11px;
+        max-width: 30%;
     }
 }
+
 /*Mobile Screen Adjustments*/
 @media screen and (max-width: 420px) {
-    body, html {
-        overflow-x: hidden;
+    .drop-down-menu-box {
+        max-width: 55%;
+        padding: 3%;
+        margin-top: 2%;
+        margin-bottom: 3%;
     }
-    /* changing logo size */
-    .logo {
-        max-width: 100%;
-    }
-    /* hiding nav links */
-    .nav-links li {
-        opacity: 0;
-    }
-    /* dispalying hamburger menu icon */
-    .burger {
-        display: block;
+
+    .new-page-link {
+        padding-bottom: 2%;
+        margin-top: 1.5%;
+        max-width: 65%;
     }
 }
