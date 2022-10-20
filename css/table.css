@@ -97,7 +97,7 @@
 
 /*–––––––––––––––––––––––––MEDIA SCREEN ADAPTATION–––––––––––––––––––––––––*/
 /*Mobile Screen Adjustments*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
     .drop-down-menu-box {
         max-width: 55%;
         padding: 3%;
